@@ -83,7 +83,7 @@ DSA                  ███████░░░  Practicing
 
 🌐 Connect With Me
 
-<div align="center"><a href="https://linkedin.com/in/YOUR-LINKEDIN-USERNAME">
+<div align="center"><a href="https://linkedin.com/in/kuntal sarkar">
 <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a><a href="https://leetcode.com/kuntal_exe">
 <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/>
