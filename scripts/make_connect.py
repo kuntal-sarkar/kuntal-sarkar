@@ -3,7 +3,7 @@ from html import escape
 
 
 ROOT = Path(__file__).resolve().parent.parent
-OUTPUT = ROOT / "assets" / "connect.svg"
+ASSETS = ROOT / "assets"
 
 
 links = [
@@ -11,31 +11,30 @@ links = [
         "LINKEDIN",
         "kuntal-sarkar-dev",
         "https://www.linkedin.com/in/kuntal-sarkar-dev",
+        "linkedin",
     ),
     (
         "LEETCODE",
         "kuntal_exe",
         "https://leetcode.com/kuntal_exe",
+        "leetcode",
     ),
     (
         "X",
         "kuntal_074",
         "https://twitter.com/kuntal_074",
+        "x",
     ),
     (
         "INSTAGRAM",
         "kuntal.exe.x",
         "https://instagram.com/kuntal.exe.x",
+        "instagram",
     ),
 ]
 
 
-svg = '''<svg xmlns="http://www.w3.org/2000/svg"
-xmlns:xlink="http://www.w3.org/1999/xlink"
-width="900" height="230" viewBox="0 0 900 230">
-
-<defs>
-
+STYLE = '''
 <style>
 
 .mono {
@@ -84,7 +83,66 @@ width="900" height="230" viewBox="0 0 900 230">
 }
 
 </style>
+'''
 
+
+def make_card(label, username, output_name):
+
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg"
+width="195" height="62" viewBox="0 0 195 62">
+
+<defs>
+{STYLE}
+</defs>
+
+<rect
+    x="1"
+    y="1"
+    width="193"
+    height="60"
+    rx="9"
+    class="card"
+/>
+
+<circle
+    cx="19"
+    cy="21"
+    r="4"
+    class="dot"
+/>
+
+<text
+    x="32"
+    y="25"
+    class="mono label"
+>
+    {escape(label)}
+</text>
+
+<text
+    x="19"
+    y="48"
+    class="mono username"
+>
+    {escape(username)}
+</text>
+
+</svg>
+'''
+
+    output = ASSETS / output_name
+    output.write_text(svg, encoding="utf-8")
+
+    print(f"Generated: {output}")
+
+
+def make_full_connect():
+
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg"
+width="900" height="230" viewBox="0 0 900 230">
+
+<defs>
+{STYLE}
 </defs>
 
 
@@ -156,59 +214,51 @@ width="900" height="230" viewBox="0 0 900 230">
     stroke="#30363D"
 />
 
+
+<!-- CARDS -->
+
 '''
 
+    card_positions = [30, 245, 460, 675]
 
-card_positions = [30, 245, 460, 675]
+    for (label, username, url, key), x in zip(links, card_positions):
 
+        svg += f'''
+<rect
+    x="{x}"
+    y="118"
+    width="195"
+    height="62"
+    rx="9"
+    class="card"
+/>
 
-for (label, username, url), x in zip(links, card_positions):
+<circle
+    cx="{x + 18}"
+    cy="139"
+    r="4"
+    class="dot"
+/>
 
-    svg += f'''
-<a
-    xlink:href="{escape(url)}"
-    href="{escape(url)}"
-    target="_blank"
+<text
+    x="{x + 31}"
+    y="143"
+    class="mono label"
 >
+    {escape(label)}
+</text>
 
-    <rect
-        x="{x}"
-        y="118"
-        width="195"
-        height="62"
-        rx="9"
-        class="card"
-    />
+<text
+    x="{x + 18}"
+    y="166"
+    class="mono username"
+>
+    {escape(username)}
+</text>
 
-    <circle
-        cx="{x + 18}"
-        cy="139"
-        r="4"
-        class="dot"
-    />
-
-    <text
-        x="{x + 31}"
-        y="143"
-        class="mono label"
-    >
-        {escape(label)}
-    </text>
-
-    <text
-        x="{x + 18}"
-        y="166"
-        class="mono username"
-    >
-        {escape(username)}
-    </text>
-
-</a>
 '''
 
-
-svg += '''
-
+    svg += '''
 <!-- FOOTER -->
 
 <text
@@ -235,9 +285,40 @@ svg += '''
 </svg>
 '''
 
+    output = ASSETS / "connect.svg"
+    output.write_text(svg, encoding="utf-8")
 
-OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    print(f"Generated: {output}")
 
-OUTPUT.write_text(svg, encoding="utf-8")
 
-print(f"Generated: {OUTPUT}")
+ASSETS.mkdir(parents=True, exist_ok=True)
+
+
+# Generate individual clickable cards
+make_card(
+    "LINKEDIN",
+    "kuntal-sarkar-dev",
+    "connect-linkedin.svg",
+)
+
+make_card(
+    "LEETCODE",
+    "kuntal_exe",
+    "connect-leetcode.svg",
+)
+
+make_card(
+    "X",
+    "kuntal_074",
+    "connect-x.svg",
+)
+
+make_card(
+    "INSTAGRAM",
+    "kuntal.exe.x",
+    "connect-instagram.svg",
+)
+
+
+# Generate the original complete visual
+make_full_connect()
