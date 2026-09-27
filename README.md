@@ -165,31 +165,26 @@ DSA                     🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜  Practicing
 <div align="center">
 
 <a href="https://www.linkedin.com/in/kuntal-sarkar-dev">
-<img src="https://img.shields.io/badge/LinkedIn-kuntal--sarkar--dev-161B22?style=for-the-badge&logo=linkedin&logoColor=white"/>
+<img src="https://img.shields.io/badge/LinkedIn-Profile-0D1117?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
-
+&nbsp;
 <a href="https://leetcode.com/kuntal_exe">
-<img src="https://img.shields.io/badge/LeetCode-kuntal__exe-161B22?style=for-the-badge&logo=leetcode&logoColor=white"/>
+<img src="https://img.shields.io/badge/LeetCode-kuntal__exe-0D1117?style=for-the-badge&logo=leetcode&logoColor=white"/>
 </a>
-
+&nbsp;
 <a href="https://twitter.com/kuntal_074">
-<img src="https://img.shields.io/badge/X-kuntal__074-161B22?style=for-the-badge&logo=x&logoColor=white"/>
+<img src="https://img.shields.io/badge/X-kuntal__074-0D1117?style=for-the-badge&logo=x&logoColor=white"/>
 </a>
-
+&nbsp;
 <a href="https://instagram.com/kuntal.exe.x">
-<img src="https://img.shields.io/badge/Instagram-kuntal.exe.x-161B22?style=for-the-badge&logo=instagram&logoColor=white"/>
+<img src="https://img.shields.io/badge/Instagram-kuntal.exe.x-0D1117?style=for-the-badge&logo=instagram&logoColor=white"/>
 </a>
 
 <br><br>
 
-```text
-┌──────────────────────────────────────────────────────────────┐
-│  CONNECT                                                    │
-│                                                              │
-│  [ LINKEDIN ]   [ LEETCODE ]   [ X ]   [ INSTAGRAM ]        │
-│                                                              │
-│  Open to learning • building • collaborating                │
-└──────────────────────────────────────────────────────────────┘
+`Let's build something interesting.`
+
+</div>
 ---
 
 ## `08` — Terminal
