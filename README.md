@@ -155,7 +155,35 @@ Sharpening problem-solving skills with C++, algorithms and data structures.
 
 <div align="center">
 
-<img src="./assets/connect.svg" alt="Connect"/>
+<table>
+<tr>
+
+<td>
+<a href="https://www.linkedin.com/in/kuntal-sarkar-dev">
+<img src="./assets/connect-linkedin.svg" alt="LinkedIn"/>
+</a>
+</td>
+
+<td>
+<a href="https://leetcode.com/kuntal_exe">
+<img src="./assets/connect-leetcode.svg" alt="LeetCode"/>
+</a>
+</td>
+
+<td>
+<a href="https://twitter.com/kuntal_074">
+<img src="./assets/connect-x.svg" alt="X"/>
+</a>
+</td>
+
+<td>
+<a href="https://instagram.com/kuntal.exe.x">
+<img src="./assets/connect-instagram.svg" alt="Instagram"/>
+</a>
+</td>
+
+</tr>
+</table>
 
 </div>
 

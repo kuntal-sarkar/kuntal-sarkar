@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+width="195" height="62" viewBox="0 0 195 62">
+
+<defs>
+
+<style>
+
+.mono {
+    font-family: "DejaVu Sans Mono", "Liberation Mono", monospace;
+}
+
+.title {
+    fill: #E6EDF3;
+    font-size: 13px;
+}
+
+.prompt {
+    fill: #7EE787;
+    font-size: 14px;
+}
+
+.command {
+    fill: #E6EDF3;
+    font-size: 14px;
+}
+
+.label {
+    fill: #8B949E;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.username {
+    fill: #E6EDF3;
+    font-size: 14px;
+}
+
+.card {
+    fill: #0D1117;
+    stroke: #30363D;
+    stroke-width: 1;
+}
+
+.dot {
+    fill: #7EE787;
+}
+
+.footer {
+    fill: #484F58;
+    font-size: 10px;
+}
+
+</style>
+
+</defs>
+
+<rect
+    x="1"
+    y="1"
+    width="193"
+    height="60"
+    rx="9"
+    class="card"
+/>
+
+<circle
+    cx="19"
+    cy="21"
+    r="4"
+    class="dot"
+/>
+
+<text
+    x="32"
+    y="25"
+    class="mono label"
+>
+    X
+</text>
+
+<text
+    x="19"
+    y="48"
+    class="mono username"
+>
+    kuntal_074
+</text>
+
+</svg>

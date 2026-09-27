@@ -1,5 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg"
-xmlns:xlink="http://www.w3.org/1999/xlink"
 width="900" height="230" viewBox="0 0 900 230">
 
 <defs>
@@ -125,165 +124,139 @@ width="900" height="230" viewBox="0 0 900 230">
 />
 
 
-<a
-    xlink:href="https://www.linkedin.com/in/kuntal-sarkar-dev"
-    href="https://www.linkedin.com/in/kuntal-sarkar-dev"
-    target="_blank"
+<!-- CARDS -->
+
+
+<rect
+    x="30"
+    y="118"
+    width="195"
+    height="62"
+    rx="9"
+    class="card"
+/>
+
+<circle
+    cx="48"
+    cy="139"
+    r="4"
+    class="dot"
+/>
+
+<text
+    x="61"
+    y="143"
+    class="mono label"
 >
+    LINKEDIN
+</text>
 
-    <rect
-        x="30"
-        y="118"
-        width="195"
-        height="62"
-        rx="9"
-        class="card"
-    />
-
-    <circle
-        cx="48"
-        cy="139"
-        r="4"
-        class="dot"
-    />
-
-    <text
-        x="61"
-        y="143"
-        class="mono label"
-    >
-        LINKEDIN
-    </text>
-
-    <text
-        x="48"
-        y="166"
-        class="mono username"
-    >
-        kuntal-sarkar-dev
-    </text>
-
-</a>
-
-<a
-    xlink:href="https://leetcode.com/kuntal_exe"
-    href="https://leetcode.com/kuntal_exe"
-    target="_blank"
+<text
+    x="48"
+    y="166"
+    class="mono username"
 >
+    kuntal-sarkar-dev
+</text>
 
-    <rect
-        x="245"
-        y="118"
-        width="195"
-        height="62"
-        rx="9"
-        class="card"
-    />
 
-    <circle
-        cx="263"
-        cy="139"
-        r="4"
-        class="dot"
-    />
+<rect
+    x="245"
+    y="118"
+    width="195"
+    height="62"
+    rx="9"
+    class="card"
+/>
 
-    <text
-        x="276"
-        y="143"
-        class="mono label"
-    >
-        LEETCODE
-    </text>
+<circle
+    cx="263"
+    cy="139"
+    r="4"
+    class="dot"
+/>
 
-    <text
-        x="263"
-        y="166"
-        class="mono username"
-    >
-        kuntal_exe
-    </text>
-
-</a>
-
-<a
-    xlink:href="https://twitter.com/kuntal_074"
-    href="https://twitter.com/kuntal_074"
-    target="_blank"
+<text
+    x="276"
+    y="143"
+    class="mono label"
 >
+    LEETCODE
+</text>
 
-    <rect
-        x="460"
-        y="118"
-        width="195"
-        height="62"
-        rx="9"
-        class="card"
-    />
-
-    <circle
-        cx="478"
-        cy="139"
-        r="4"
-        class="dot"
-    />
-
-    <text
-        x="491"
-        y="143"
-        class="mono label"
-    >
-        X
-    </text>
-
-    <text
-        x="478"
-        y="166"
-        class="mono username"
-    >
-        kuntal_074
-    </text>
-
-</a>
-
-<a
-    xlink:href="https://instagram.com/kuntal.exe.x"
-    href="https://instagram.com/kuntal.exe.x"
-    target="_blank"
+<text
+    x="263"
+    y="166"
+    class="mono username"
 >
+    kuntal_exe
+</text>
 
-    <rect
-        x="675"
-        y="118"
-        width="195"
-        height="62"
-        rx="9"
-        class="card"
-    />
 
-    <circle
-        cx="693"
-        cy="139"
-        r="4"
-        class="dot"
-    />
+<rect
+    x="460"
+    y="118"
+    width="195"
+    height="62"
+    rx="9"
+    class="card"
+/>
 
-    <text
-        x="706"
-        y="143"
-        class="mono label"
-    >
-        INSTAGRAM
-    </text>
+<circle
+    cx="478"
+    cy="139"
+    r="4"
+    class="dot"
+/>
 
-    <text
-        x="693"
-        y="166"
-        class="mono username"
-    >
-        kuntal.exe.x
-    </text>
+<text
+    x="491"
+    y="143"
+    class="mono label"
+>
+    X
+</text>
 
-</a>
+<text
+    x="478"
+    y="166"
+    class="mono username"
+>
+    kuntal_074
+</text>
+
+
+<rect
+    x="675"
+    y="118"
+    width="195"
+    height="62"
+    rx="9"
+    class="card"
+/>
+
+<circle
+    cx="693"
+    cy="139"
+    r="4"
+    class="dot"
+/>
+
+<text
+    x="706"
+    y="143"
+    class="mono label"
+>
+    INSTAGRAM
+</text>
+
+<text
+    x="693"
+    y="166"
+    class="mono username"
+>
+    kuntal.exe.x
+</text>
 
 
 <!-- FOOTER -->
