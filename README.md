@@ -153,28 +153,43 @@ DSA                     🟦🟦🟦🟦🟦🟦🟦⬜⬜⬜  Practicing
 
 ---
 
-## `07` — Connect
 
-<div align="center">
-
-<a href="https://www.linkedin.com/in/kuntal-sarkar-dev">
-<img src="https://img.shields.io/badge/LinkedIn-Profile-161B22?style=flat-square&logo=linkedin&logoColor=white"/>
-</a>
-
-<a href="https://leetcode.com/kuntal_exe">
 <img src="https://img.shields.io/badge/LeetCode-kuntal__exe-161B22?style=flat-square&logo=leetcode&logoColor=white"/>
 </a>
 
 <a href="https://twitter.com/kuntal_074">
 <img src="https://img.shields.io/badge/X-kuntal__074-161B22?style=flat-square&logo=x&logoColor=white"/>
 </a>
+## `07` — Connect
 
-<a href="https://instagram.com/kuntal.exe.x">
-<img src="https://img.shields.io/badge/Instagram-kuntal.exe.x-161B22?style=flat-square&logo=instagram&logoColor=white"/>
+<div align="center">
+
+<a href="https://www.linkedin.com/in/kuntal-sarkar-dev">
+<img src="https://img.shields.io/badge/LinkedIn-kuntal--sarkar--dev-161B22?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
 
-</div>
+<a href="https://leetcode.com/kuntal_exe">
+<img src="https://img.shields.io/badge/LeetCode-kuntal__exe-161B22?style=for-the-badge&logo=leetcode&logoColor=white"/>
+</a>
 
+<a href="https://twitter.com/kuntal_074">
+<img src="https://img.shields.io/badge/X-kuntal__074-161B22?style=for-the-badge&logo=x&logoColor=white"/>
+</a>
+
+<a href="https://instagram.com/kuntal.exe.x">
+<img src="https://img.shields.io/badge/Instagram-kuntal.exe.x-161B22?style=for-the-badge&logo=instagram&logoColor=white"/>
+</a>
+
+<br><br>
+
+```text
+┌──────────────────────────────────────────────────────────────┐
+│  CONNECT                                                    │
+│                                                              │
+│  [ LINKEDIN ]   [ LEETCODE ]   [ X ]   [ INSTAGRAM ]        │
+│                                                              │
+│  Open to learning • building • collaborating                │
+└──────────────────────────────────────────────────────────────┘
 ---
 
 ## `08` — Terminal
