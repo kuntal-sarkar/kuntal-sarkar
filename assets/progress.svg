@@ -1,0 +1,7503 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    width="900"
+    height="470"
+    viewBox="0 0 900 470">
+
+<defs>
+
+    <filter id="glow">
+        <feGaussianBlur stdDeviation="2.5" result="blur"/>
+        <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+    </filter>
+
+</defs>
+
+<style>
+
+    .terminal {
+        font-family: "Courier New", monospace;
+    }
+
+    .bold {
+        font-weight: 700;
+    }
+
+    /* Terminal entrance */
+    .boot {
+        opacity: 0;
+        animation: boot 0.6s ease-out forwards;
+    }
+
+    .row1 { animation-delay: 0.25s; }
+    .row2 { animation-delay: 0.45s; }
+    .row3 { animation-delay: 0.65s; }
+    .row4 { animation-delay: 0.85s; }
+    .row5 { animation-delay: 1.05s; }
+    .row6 { animation-delay: 1.25s; }
+
+    @keyframes boot {
+        from {
+            opacity: 0;
+            transform: translateX(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+   /* Progress bar animation */
+.progress {
+    transform-box: fill-box;
+    transform-origin: left center;
+    transform: scaleX(0);
+    animation: load 5.5s cubic-bezier(.25,.1,.25,1) forwards;
+}
+
+    .p1 { animation-delay: 0.45s; }
+    .p2 { animation-delay: 0.65s; }
+    .p3 { animation-delay: 0.85s; }
+    .p4 { animation-delay: 1.05s; }
+    .p5 { animation-delay: 1.25s; }
+    .p6 { animation-delay: 1.45s; }
+
+    @keyframes load {
+        from {
+            transform: scaleX(0);
+        }
+        to {
+            transform: scaleX(1);
+        }
+    }
+
+    /* Status text pulse */
+    .status {
+        animation: statusPulse 2.8s ease-in-out infinite;
+    }
+
+    @keyframes statusPulse {
+        0%, 100% {
+            opacity: 0.65;
+        }
+        50% {
+            opacity: 1;
+        }
+    }
+
+    /* Counter frame base */
+    .counter-frame {
+        pointer-events: none;
+    }
+
+    /* Cursor */
+    .cursor {
+        animation: cursorBlink 0.8s steps(1) infinite;
+    }
+
+    @keyframes cursorBlink {
+        0%, 45% {
+            opacity: 1;
+        }
+        46%, 100% {
+            opacity: 0;
+        }
+    }
+
+    /* Scan effect */
+    .scan {
+        animation: scan 5s ease-in-out infinite;
+    }
+
+    @keyframes scan {
+        0%, 65%, 100% {
+            opacity: 0;
+        }
+        68% {
+            opacity: 0.15;
+        }
+        72% {
+            opacity: 0;
+        }
+    }
+
+    /* Border pulse */
+    .window {
+        animation: borderPulse 4s ease-in-out infinite;
+    }
+
+    @keyframes borderPulse {
+        0%, 100% {
+            stroke-opacity: 0.7;
+        }
+        50% {
+            stroke-opacity: 1;
+        }
+    }
+
+</style>
+
+
+<!-- ===================================================== -->
+<!-- TERMINAL WINDOW -->
+<!-- ===================================================== -->
+
+<rect
+    x="10"
+    y="10"
+    width="880"
+    height="450"
+    rx="15"
+    fill="#0D1117"
+    stroke="#30363D"
+    stroke-width="2"
+    class="window"
+/>
+
+
+<!-- ===================================================== -->
+<!-- MACOS TRAFFIC LIGHTS -->
+<!-- ===================================================== -->
+
+<circle cx="34" cy="38" r="7" fill="#FF5F57"/>
+<circle cx="58" cy="38" r="7" fill="#FEBC2E"/>
+<circle cx="82" cy="38" r="7" fill="#28C840"/>
+
+
+<!-- Terminal title -->
+
+<text
+    x="112"
+    y="44"
+    fill="#8B949E"
+    font-size="17"
+    class="terminal">
+    kuntal@github
+</text>
+
+
+<!-- Divider -->
+
+<line
+    x1="30"
+    y1="70"
+    x2="870"
+    y2="70"
+    stroke="#30363D"
+    stroke-width="1"
+/>
+
+
+<!-- ===================================================== -->
+<!-- COMMAND -->
+<!-- ===================================================== -->
+
+<text
+    x="35"
+    y="105"
+    fill="#7EE787"
+    font-size="17"
+    class="terminal bold"
+    filter="url(#glow)">
+    kuntal@github:~$ ./progress.sh
+</text>
+
+
+<!-- Section heading -->
+
+<text
+    x="35"
+    y="132"
+    fill="#E6EDF3"
+    font-size="17"
+    class="terminal bold">
+    04 — CURRENTLY LOADING...
+</text>
+
+
+<g class="boot row1">
+
+    <!-- Skill name -->
+
+    <text
+        x="35"
+        y="155"
+        fill="#8B949E"
+        font-size="15"
+        class="terminal bold">
+        FRONTEND DEVELOPMENT
+    </text>
+
+
+    <!-- Empty bar -->
+
+    <rect
+        x="390"
+        y="145"
+        width="300"
+        height="10"
+        rx="5"
+        fill="#21262D"
+    />
+
+
+    <!-- Filled bar -->
+
+    <rect
+        x="390"
+        y="145"
+        width="225.0"
+        height="10"
+        rx="5"
+        fill="#7EE787"
+        class="progress p1"
+        filter="url(#glow)"
+    />
+
+    <!-- Animated percentage counter -->
+
+    <g>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            0%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="0.4500s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="0.5200s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            1%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="0.5233s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="0.5933s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            2%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="0.5967s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="0.6667s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            3%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="0.6700s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="0.7400s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            4%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="0.7433s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="0.8133s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            5%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="0.8167s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="0.8867s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            6%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="0.8900s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="0.9600s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            7%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="0.9633s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.0333s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            8%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.0367s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.1067s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            9%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.1100s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.1800s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            10%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.1833s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.2533s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            11%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.2567s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.3267s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            12%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.3300s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.4000s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            13%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.4033s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.4733s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            14%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.4767s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.5467s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            15%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.5500s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.6200s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            16%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.6233s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.6933s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            17%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.6967s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.7667s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            18%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.7700s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.8400s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            19%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.8433s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.9133s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            20%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.9167s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.9867s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            21%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.9900s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.0600s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            22%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.0633s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.1333s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            23%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.1367s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.2067s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            24%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.2100s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.2800s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            25%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.2833s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.3533s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            26%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.3567s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.4267s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            27%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.4300s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.5000s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            28%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.5033s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.5733s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            29%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.5767s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.6467s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            30%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.6500s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.7200s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            31%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.7233s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.7933s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            32%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.7967s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.8667s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            33%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.8700s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.9400s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            34%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.9433s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.0133s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            35%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.0167s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.0867s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            36%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.0900s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.1600s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            37%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.1633s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.2333s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            38%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.2367s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.3067s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            39%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.3100s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.3800s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            40%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.3833s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.4533s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            41%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.4567s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.5267s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            42%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.5300s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.6000s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            43%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.6033s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.6733s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            44%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.6767s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.7467s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            45%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.7500s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.8200s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            46%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.8233s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.8933s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            47%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.8967s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.9667s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            48%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.9700s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.0400s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            49%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.0433s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.1133s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            50%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.1167s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.1867s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            51%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.1900s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.2600s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            52%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.2633s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.3333s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            53%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.3367s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.4067s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            54%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.4100s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.4800s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            55%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.4833s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.5533s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            56%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.5567s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.6267s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            57%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.6300s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.7000s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            58%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.7033s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.7733s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            59%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.7767s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.8467s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            60%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.8500s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.9200s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            61%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.9233s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.9933s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            62%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.9967s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.0667s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            63%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.0700s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.1400s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            64%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.1433s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.2133s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            65%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.2167s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.2867s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            66%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.2900s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.3600s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            67%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.3633s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.4333s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            68%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.4367s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.5067s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            69%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.5100s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.5800s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            70%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.5833s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.6533s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            71%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.6567s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.7267s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            72%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.7300s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.8000s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            73%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.8033s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.8733s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            74%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.8767s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.9467s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="155"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            75%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.12s"
+                begin="5.9500s"
+                fill="freeze"
+            />
+
+        </text>
+
+    </g>
+
+</g>
+
+<g class="boot row2">
+
+    <!-- Skill name -->
+
+    <text
+        x="35"
+        y="198"
+        fill="#8B949E"
+        font-size="15"
+        class="terminal bold">
+        BACKEND DEVELOPMENT
+    </text>
+
+
+    <!-- Empty bar -->
+
+    <rect
+        x="390"
+        y="188"
+        width="300"
+        height="10"
+        rx="5"
+        fill="#21262D"
+    />
+
+
+    <!-- Filled bar -->
+
+    <rect
+        x="390"
+        y="188"
+        width="210.0"
+        height="10"
+        rx="5"
+        fill="#7EE787"
+        class="progress p2"
+        filter="url(#glow)"
+    />
+
+    <!-- Animated percentage counter -->
+
+    <g>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            0%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="0.6500s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="0.7200s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            1%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="0.7286s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="0.7986s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            2%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="0.8071s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="0.8771s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            3%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="0.8857s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="0.9557s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            4%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="0.9643s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.0343s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            5%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.0429s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.1129s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            6%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.1214s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.1914s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            7%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.2000s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.2700s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            8%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.2786s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.3486s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            9%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.3571s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.4271s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            10%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.4357s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.5057s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            11%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.5143s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.5843s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            12%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.5929s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.6629s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            13%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.6714s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.7414s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            14%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.7500s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.8200s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            15%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.8286s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.8986s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            16%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.9071s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.9771s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            17%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.9857s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.0557s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            18%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.0643s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.1343s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            19%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.1429s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.2129s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            20%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.2214s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.2914s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            21%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.3000s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.3700s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            22%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.3786s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.4486s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            23%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.4571s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.5271s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            24%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.5357s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.6057s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            25%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.6143s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.6843s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            26%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.6929s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.7629s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            27%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.7714s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.8414s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            28%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.8500s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.9200s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            29%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.9286s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.9986s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            30%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.0071s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.0771s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            31%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.0857s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.1557s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            32%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.1643s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.2343s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            33%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.2429s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.3129s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            34%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.3214s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.3914s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            35%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.4000s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.4700s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            36%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.4786s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.5486s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            37%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.5571s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.6271s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            38%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.6357s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.7057s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            39%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.7143s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.7843s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            40%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.7929s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.8629s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            41%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.8714s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.9414s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            42%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.9500s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.0200s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            43%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.0286s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.0986s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            44%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.1071s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.1771s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            45%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.1857s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.2557s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            46%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.2643s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.3343s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            47%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.3429s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.4129s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            48%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.4214s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.4914s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            49%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.5000s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.5700s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            50%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.5786s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.6486s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            51%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.6571s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.7271s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            52%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.7357s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.8057s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            53%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.8143s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.8843s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            54%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.8929s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.9629s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            55%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.9714s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.0414s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            56%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.0500s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.1200s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            57%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.1286s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.1986s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            58%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.2071s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.2771s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            59%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.2857s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.3557s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            60%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.3643s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.4343s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            61%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.4429s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.5129s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            62%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.5214s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.5914s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            63%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.6000s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.6700s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            64%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.6786s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.7486s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            65%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.7571s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.8271s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            66%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.8357s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.9057s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            67%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.9143s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.9843s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            68%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.9929s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="6.0629s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            69%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="6.0714s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="6.1414s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="198"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            70%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.12s"
+                begin="6.1500s"
+                fill="freeze"
+            />
+
+        </text>
+
+    </g>
+
+</g>
+
+<g class="boot row3">
+
+    <!-- Skill name -->
+
+    <text
+        x="35"
+        y="241"
+        fill="#8B949E"
+        font-size="15"
+        class="terminal bold">
+        PYTHON
+    </text>
+
+
+    <!-- Empty bar -->
+
+    <rect
+        x="390"
+        y="231"
+        width="300"
+        height="10"
+        rx="5"
+        fill="#21262D"
+    />
+
+
+    <!-- Filled bar -->
+
+    <rect
+        x="390"
+        y="231"
+        width="180.0"
+        height="10"
+        rx="5"
+        fill="#7EE787"
+        class="progress p3"
+        filter="url(#glow)"
+    />
+
+    <!-- Animated percentage counter -->
+
+    <g>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            0%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="0.8500s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="0.9200s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            1%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="0.9417s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.0117s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            2%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.0333s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.1033s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            3%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.1250s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.1950s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            4%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.2167s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.2867s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            5%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.3083s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.3783s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            6%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.4000s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.4700s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            7%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.4917s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.5617s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            8%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.5833s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.6533s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            9%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.6750s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.7450s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            10%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.7667s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.8367s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            11%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.8583s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.9283s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            12%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.9500s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.0200s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            13%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.0417s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.1117s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            14%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.1333s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.2033s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            15%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.2250s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.2950s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            16%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.3167s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.3867s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            17%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.4083s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.4783s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            18%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.5000s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.5700s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            19%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.5917s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.6617s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            20%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.6833s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.7533s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            21%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.7750s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.8450s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            22%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.8667s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.9367s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            23%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.9583s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.0283s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            24%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.0500s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.1200s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            25%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.1417s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.2117s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            26%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.2333s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.3033s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            27%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.3250s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.3950s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            28%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.4167s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.4867s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            29%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.5083s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.5783s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            30%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.6000s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.6700s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            31%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.6917s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.7617s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            32%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.7833s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.8533s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            33%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.8750s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.9450s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            34%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.9667s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.0367s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            35%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.0583s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.1283s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            36%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.1500s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.2200s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            37%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.2417s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.3117s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            38%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.3333s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.4033s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            39%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.4250s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.4950s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            40%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.5167s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.5867s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            41%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.6083s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.6783s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            42%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.7000s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.7700s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            43%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.7917s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.8617s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            44%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.8833s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.9533s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            45%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.9750s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.0450s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            46%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.0667s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.1367s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            47%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.1583s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.2283s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            48%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.2500s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.3200s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            49%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.3417s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.4117s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            50%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.4333s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.5033s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            51%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.5250s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.5950s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            52%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.6167s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.6867s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            53%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.7083s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.7783s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            54%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.8000s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.8700s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            55%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.8917s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.9617s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            56%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.9833s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="6.0533s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            57%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="6.0750s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="6.1450s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            58%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="6.1667s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="6.2367s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            59%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="6.2583s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="6.3283s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="241"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            60%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.12s"
+                begin="6.3500s"
+                fill="freeze"
+            />
+
+        </text>
+
+    </g>
+
+</g>
+
+<g class="boot row4">
+
+    <!-- Skill name -->
+
+    <text
+        x="35"
+        y="284"
+        fill="#8B949E"
+        font-size="15"
+        class="terminal bold">
+        JAVA
+    </text>
+
+
+    <!-- Empty bar -->
+
+    <rect
+        x="390"
+        y="274"
+        width="300"
+        height="10"
+        rx="5"
+        fill="#21262D"
+    />
+
+
+    <!-- Filled bar -->
+
+    <rect
+        x="390"
+        y="274"
+        width="120.0"
+        height="10"
+        rx="5"
+        fill="#7EE787"
+        class="progress p4"
+        filter="url(#glow)"
+    />
+
+    <!-- Animated percentage counter -->
+
+    <g>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            0%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.0500s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.1200s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            1%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.1875s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.2575s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            2%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.3250s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.3950s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            3%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.4625s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.5325s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            4%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.6000s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.6700s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            5%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.7375s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.8075s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            6%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="1.8750s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="1.9450s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            7%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.0125s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.0825s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            8%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.1500s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.2200s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            9%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.2875s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.3575s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            10%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.4250s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.4950s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            11%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.5625s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.6325s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            12%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.7000s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.7700s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            13%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.8375s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="2.9075s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            14%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="2.9750s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.0450s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            15%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.1125s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.1825s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            16%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.2500s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.3200s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            17%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.3875s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.4575s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            18%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.5250s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.5950s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            19%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.6625s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.7325s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            20%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.8000s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="3.8700s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            21%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="3.9375s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.0075s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            22%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.0750s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.1450s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            23%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.2125s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.2825s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            24%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.3500s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.4200s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            25%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.4875s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.5575s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            26%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.6250s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.6950s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            27%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.7625s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.8325s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            28%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="4.9000s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="4.9700s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            29%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.0375s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.1075s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            30%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.1750s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.2450s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            31%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.3125s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.3825s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            32%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.4500s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.5200s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            33%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.5875s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.6575s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            34%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.7250s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.7950s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            35%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="5.8625s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="5.9325s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            36%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="6.0000s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="6.0700s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            37%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="6.1375s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="6.2075s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            38%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="6.2750s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="6.3450s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            39%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.07s"
+                begin="6.4125s"
+                fill="freeze"
+            />
+
+            <animate
+                attributeName="opacity"
+                values="1;0"
+                dur="0.07s"
+                begin="6.4825s"
+                fill="freeze"
+            />
+
+        </text>
+
+        <text
+            x="720"
+            y="284"
+            fill="#7EE787"
+            font-size="15"
+            class="terminal bold counter-frame"
+            opacity="0">
+
+            40%
+
+            <animate
+                attributeName="opacity"
+                values="0;1"
+                dur="0.12s"
+                begin="6.5500s"
+                fill="freeze"
+            />
+
+        </text>
+
+    </g>
+
+</g>
+
+<g class="boot row5">
+
+    <!-- Skill name -->
+
+    <text
+        x="35"
+        y="327"
+        fill="#8B949E"
+        font-size="15"
+        class="terminal bold">
+        CYBERSECURITY
+    </text>
+
+
+    <!-- Empty bar -->
+
+    <rect
+        x="390"
+        y="317"
+        width="300"
+        height="10"
+        rx="5"
+        fill="#21262D"
+    />
+
+
+    <!-- Filled bar -->
+
+    <rect
+        x="390"
+        y="317"
+        width="120.0"
+        height="10"
+        rx="5"
+        fill="#7EE787"
+        class="progress p5"
+        filter="url(#glow)"
+    />
+
+    <!-- Percentage / status -->
+
+    <text
+        x="720"
+        y="327"
+        fill="#7EE787"
+        font-size="15"
+        class="terminal bold status">
+        EXPLORING
+    </text>
+
+</g>
+
+<g class="boot row6">
+
+    <!-- Skill name -->
+
+    <text
+        x="35"
+        y="370"
+        fill="#8B949E"
+        font-size="15"
+        class="terminal bold">
+        DSA
+    </text>
+
+
+    <!-- Empty bar -->
+
+    <rect
+        x="390"
+        y="360"
+        width="300"
+        height="10"
+        rx="5"
+        fill="#21262D"
+    />
+
+
+    <!-- Filled bar -->
+
+    <rect
+        x="390"
+        y="360"
+        width="210.0"
+        height="10"
+        rx="5"
+        fill="#7EE787"
+        class="progress p6"
+        filter="url(#glow)"
+    />
+
+    <!-- Percentage / status -->
+
+    <text
+        x="720"
+        y="370"
+        fill="#7EE787"
+        font-size="15"
+        class="terminal bold status">
+        PRACTICING
+    </text>
+
+</g>
+
+
+<!-- ===================================================== -->
+<!-- FOOTER -->
+<!-- ===================================================== -->
+
+<line
+    x1="35"
+    y1="415"
+    x2="865"
+    y2="415"
+    stroke="#30363D"
+    stroke-width="1"
+/>
+
+
+<text
+    x="35"
+    y="445"
+    fill="#7EE787"
+    font-size="16"
+    class="terminal bold">
+    &gt; Progress &gt; Perfection
+</text>
+
+
+<!-- Blinking cursor -->
+
+<rect
+    x="265"
+    y="429"
+    width="9"
+    height="18"
+    rx="1"
+    fill="#7EE787"
+    class="cursor"
+    filter="url(#glow)"
+/>
+
+
+<!-- Subtle scan -->
+
+<rect
+    x="25"
+    y="82"
+    width="850"
+    height="1"
+    fill="#7EE787"
+    class="scan"
+/>
+
+
+</svg>

@@ -1,0 +1,2563 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    width="900"
+    height="500"
+    viewBox="0 0 900 500">
+
+<style>
+
+    .terminal {
+        font-family: "Courier New", monospace;
+    }
+
+    .bold {
+        font-weight: 700;
+    }
+
+    .value {
+        fill: #7EE787;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .label {
+        fill: #8B949E;
+        font-size: 14px;
+    }
+
+    .language {
+        fill: #8B949E;
+        font-size: 14px;
+    }
+
+    .bar-bg {
+        fill: #21262D;
+    }
+
+    .language-bar {
+        fill: #7EE787;
+    }
+
+    .counter-frame {
+        pointer-events: none;
+    }
+
+    .cursor {
+        animation: blink 0.8s steps(1) infinite;
+    }
+
+    @keyframes blink {
+        0%, 45% {
+            opacity: 1;
+        }
+
+        46%, 100% {
+            opacity: 0;
+        }
+    }
+
+    .window {
+        animation: pulse 4s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+        0%, 100% {
+            stroke-opacity: 0.7;
+        }
+
+        50% {
+            stroke-opacity: 1;
+        }
+    }
+
+</style>
+
+
+<!-- ===================================================== -->
+<!-- TERMINAL WINDOW -->
+<!-- ===================================================== -->
+
+<rect
+    x="10"
+    y="10"
+    width="880"
+    height="480"
+    rx="15"
+    fill="#0D1117"
+    stroke="#30363D"
+    stroke-width="2"
+    class="window"
+/>
+
+
+<!-- ===================================================== -->
+<!-- TRAFFIC LIGHTS -->
+<!-- ===================================================== -->
+
+<circle cx="34" cy="38" r="7" fill="#FF5F57"/>
+<circle cx="58" cy="38" r="7" fill="#FEBC2E"/>
+<circle cx="82" cy="38" r="7" fill="#28C840"/>
+
+
+<!-- Terminal title -->
+
+<text
+    x="112"
+    y="44"
+    fill="#8B949E"
+    font-size="17"
+    class="terminal">
+    kuntal@github
+</text>
+
+
+<!-- Divider -->
+
+<line
+    x1="30"
+    y1="70"
+    x2="870"
+    y2="70"
+    stroke="#30363D"
+/>
+
+
+<!-- ===================================================== -->
+<!-- COMMAND -->
+<!-- ===================================================== -->
+
+<text
+    x="35"
+    y="105"
+    fill="#7EE787"
+    font-size="18"
+    class="terminal bold">
+    kuntal@github:~$ github_stats
+</text>
+
+
+<!-- Heading -->
+
+<text
+    x="35"
+    y="140"
+    fill="#E6EDF3"
+    font-size="18"
+    class="terminal bold">
+    05 — GITHUB ANALYTICS
+</text>
+
+
+<!-- ===================================================== -->
+<!-- CONTRIBUTION STATS -->
+<!-- ===================================================== -->
+
+<text
+    x="65"
+    y="185"
+    fill="#8B949E"
+    font-size="14"
+    class="terminal">
+    TOTAL CONTRIBUTIONS
+</text>
+
+<text
+    x="65"
+    y="220"
+    class="terminal value">
+    23
+</text>
+
+
+<text
+    x="300"
+    y="185"
+    fill="#8B949E"
+    font-size="14"
+    class="terminal">
+    COMMITS
+</text>
+
+<text
+    x="300"
+    y="220"
+    class="terminal value">
+    18
+</text>
+
+
+<text
+    x="500"
+    y="185"
+    fill="#8B949E"
+    font-size="14"
+    class="terminal">
+    PULL REQUESTS
+</text>
+
+<text
+    x="500"
+    y="220"
+    class="terminal value">
+    3
+</text>
+
+
+<text
+    x="720"
+    y="185"
+    fill="#8B949E"
+    font-size="14"
+    class="terminal">
+    ISSUES
+</text>
+
+<text
+    x="720"
+    y="220"
+    class="terminal value">
+    0
+</text>
+
+
+<!-- ===================================================== -->
+<!-- TOP LANGUAGE -->
+<!-- ===================================================== -->
+
+<text
+    x="65"
+    y="265"
+    fill="#8B949E"
+    font-size="14"
+    class="terminal">
+    TOP LANGUAGE
+</text>
+
+<text
+    x="65"
+    y="295"
+    fill="#7EE787"
+    font-size="17"
+    class="terminal bold">
+    JavaScript
+</text>
+
+
+<!-- ===================================================== -->
+<!-- LANGUAGE BREAKDOWN -->
+<!-- ===================================================== -->
+
+<text
+    x="300"
+    y="265"
+    fill="#E6EDF3"
+    font-size="16"
+    class="terminal bold">
+    LANGUAGE BREAKDOWN
+</text>
+
+<text
+    x="300"
+    y="292"
+    fill="#8B949E"
+    font-size="14"
+    class="terminal">
+    JavaScript
+</text>
+
+<rect
+    x="470"
+    y="284"
+    width="300"
+    height="9"
+    rx="4"
+    class="bar-bg"
+/>
+
+<rect
+    x="470"
+    y="284"
+    width="0"
+    height="9"
+    rx="4"
+    class="language-bar">
+
+    <animate
+        attributeName="width"
+        from="0"
+        to="269.41"
+        dur="5.5s"
+        begin="0.45s"
+        fill="freeze"
+    />
+
+</rect>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    0%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="0.4500s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    1%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="0.5111s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    2%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="0.5722s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    3%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="0.6333s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    4%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="0.6944s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    5%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="0.7556s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    6%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="0.8167s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    7%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="0.8778s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    8%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="0.9389s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    9%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="1.0000s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    10%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="1.0611s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    11%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="1.1222s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    12%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="1.1833s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    13%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="1.2444s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    14%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="1.3056s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    15%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="1.3667s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    16%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="1.4278s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    17%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="1.4889s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    18%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="1.5500s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    19%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="1.6111s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    20%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="1.6722s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    21%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="1.7333s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    22%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="1.7944s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    23%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="1.8556s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    24%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="1.9167s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    25%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="1.9778s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    26%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="2.0389s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    27%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="2.1000s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    28%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="2.1611s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    29%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="2.2222s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    30%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="2.2833s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    31%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="2.3444s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    32%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="2.4056s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    33%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="2.4667s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    34%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="2.5278s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    35%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="2.5889s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    36%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="2.6500s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    37%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="2.7111s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    38%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="2.7722s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    39%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="2.8333s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    40%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="2.8944s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    41%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="2.9556s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    42%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="3.0167s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    43%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="3.0778s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    44%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="3.1389s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    45%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="3.2000s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    46%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="3.2611s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    47%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="3.3222s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    48%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="3.3833s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    49%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="3.4444s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    50%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="3.5056s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    51%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="3.5667s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    52%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="3.6278s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    53%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="3.6889s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    54%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="3.7500s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    55%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="3.8111s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    56%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="3.8722s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    57%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="3.9333s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    58%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="3.9944s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    59%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="4.0556s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    60%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="4.1167s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    61%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="4.1778s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    62%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="4.2389s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    63%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="4.3000s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    64%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="4.3611s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    65%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="4.4222s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    66%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="4.4833s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    67%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="4.5444s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    68%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="4.6056s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    69%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="4.6667s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    70%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="4.7278s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    71%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="4.7889s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    72%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="4.8500s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    73%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="4.9111s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    74%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="4.9722s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    75%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="5.0333s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    76%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="5.0944s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    77%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="5.1556s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    78%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="5.2167s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    79%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="5.2778s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    80%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="5.3389s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    81%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="5.4000s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    82%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="5.4611s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    83%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="5.5222s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    84%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="5.5833s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    85%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="5.6444s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    86%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="5.7056s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    87%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="5.7667s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    88%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="5.8278s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    89%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.0611s"
+        begin="5.8889s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="292"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    89.8%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1"
+        dur="0.0611s"
+        begin="5.9500s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="300"
+    y="322"
+    fill="#8B949E"
+    font-size="14"
+    class="terminal">
+    CSS
+</text>
+
+<rect
+    x="470"
+    y="314"
+    width="300"
+    height="9"
+    rx="4"
+    class="bar-bg"
+/>
+
+<rect
+    x="470"
+    y="314"
+    width="0"
+    height="9"
+    rx="4"
+    class="language-bar">
+
+    <animate
+        attributeName="width"
+        from="0"
+        to="29.76"
+        dur="5.5s"
+        begin="0.65s"
+        fill="freeze"
+    />
+
+</rect>
+
+<text
+    x="785"
+    y="322"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    0%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.5500s"
+        begin="0.6500s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="322"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    1%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.5500s"
+        begin="1.2000s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="322"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    2%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.5500s"
+        begin="1.7500s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="322"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    3%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.5500s"
+        begin="2.3000s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="322"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    4%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.5500s"
+        begin="2.8500s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="322"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    5%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.5500s"
+        begin="3.4000s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="322"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    6%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.5500s"
+        begin="3.9500s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="322"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    7%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.5500s"
+        begin="4.5000s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="322"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    8%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.5500s"
+        begin="5.0500s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="322"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    9%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.5500s"
+        begin="5.6000s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="322"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    9.9%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1"
+        dur="0.5500s"
+        begin="6.1500s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="300"
+    y="352"
+    fill="#8B949E"
+    font-size="14"
+    class="terminal">
+    HTML
+</text>
+
+<rect
+    x="470"
+    y="344"
+    width="300"
+    height="9"
+    rx="4"
+    class="bar-bg"
+/>
+
+<rect
+    x="470"
+    y="344"
+    width="0"
+    height="9"
+    rx="4"
+    class="language-bar">
+
+    <animate
+        attributeName="width"
+        from="0"
+        to="0.83"
+        dur="5.5s"
+        begin="0.85s"
+        fill="freeze"
+    />
+
+</rect>
+
+<text
+    x="785"
+    y="352"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    0.3%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1"
+        dur="5.5000s"
+        begin="0.8500s"
+        fill="freeze"
+    />
+
+</text>
+
+
+<!-- ===================================================== -->
+<!-- FOOTER -->
+<!-- ===================================================== -->
+
+<line
+    x1="35"
+    y1="450"
+    x2="865"
+    y2="450"
+    stroke="#30363D"
+/>
+
+
+<text
+    x="35"
+    y="475"
+    fill="#7EE787"
+    font-size="15"
+    class="terminal bold">
+    &gt; Live data • GitHub GraphQL API
+</text>
+
+
+<rect
+    x="330"
+    y="461"
+    width="8"
+    height="17"
+    fill="#7EE787"
+    class="cursor"
+/>
+
+
+</svg>

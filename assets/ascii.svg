@@ -1,0 +1,1031 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="708"
+    height="509"
+    viewBox="0 0 708 509"
+>
+
+    <!-- =================================
+         TERMINAL BACKGROUND
+         ================================= -->
+
+    <rect
+        width="100%"
+        height="100%"
+        rx="10"
+        fill="#0D1117"
+    />
+
+
+    <style>
+
+        /* =================================
+           ASCII PORTRAIT
+           ================================= */
+
+        .ascii-line {
+            font-family: "Courier New", monospace;
+            font-size: 10px;
+            font-weight: bold;
+
+            fill: #C9D1D9;
+
+            opacity: 0;
+
+            animation:
+                boot 10.5s cubic-bezier(.22,.61,.36,1)
+                var(--delay)
+                infinite;
+
+            transform-origin: center;
+        }
+
+
+        /* =================================
+           MAIN DIGITAL BOOT
+           ================================= */
+
+        @keyframes boot {
+
+            /* -----------------------------
+               INITIAL DIGITAL NOISE
+               ----------------------------- */
+
+            0% {
+                opacity: 0;
+
+                transform:
+                    translateX(var(--direction))
+                    skewX(5deg);
+            }
+
+
+            /* -----------------------------
+               QUICK SIGNAL HIT
+               ----------------------------- */
+
+            3% {
+                opacity: 0.18;
+
+                transform:
+                    translateX(10px)
+                    skewX(-4deg);
+            }
+
+
+            6% {
+                opacity: 0.48;
+
+                transform:
+                    translateX(-6px)
+                    skewX(3deg);
+            }
+
+
+            /* -----------------------------
+               GLITCH SNAP
+               ----------------------------- */
+
+            9% {
+                opacity: 0.72;
+
+                transform:
+                    translateX(4px)
+                    skewX(-2deg);
+            }
+
+
+            12% {
+                opacity: 0.42;
+
+                transform:
+                    translateX(-3px)
+                    skewX(1deg);
+            }
+
+
+            15% {
+                opacity: 0.90;
+
+                transform:
+                    translateX(1px)
+                    skewX(0deg);
+            }
+
+
+            /* -----------------------------
+               PORTRAIT LOCK
+               ----------------------------- */
+
+            19% {
+                opacity: 0.94;
+
+                transform:
+                    translateX(0)
+                    skewX(0deg);
+            }
+
+
+            /* -----------------------------
+               DIGITAL FLICKER
+               ----------------------------- */
+
+            23% {
+                opacity: 0.72;
+            }
+
+            24.5% {
+                opacity: 0.98;
+            }
+
+            26% {
+                opacity: 0.80;
+            }
+
+            27.5% {
+                opacity: 0.94;
+            }
+
+
+            /* -----------------------------
+               CLEAN PORTRAIT
+               ----------------------------- */
+
+            32% {
+                opacity: 0.92;
+            }
+
+            62% {
+                opacity: 0.92;
+            }
+
+
+            /* -----------------------------
+               SECONDARY GLITCH
+               ----------------------------- */
+
+            64% {
+                opacity: 0.70;
+
+                transform:
+                    translateX(-3px)
+                    skewX(1deg);
+            }
+
+            65.5% {
+                opacity: 0.98;
+
+                transform:
+                    translateX(3px)
+                    skewX(-1deg);
+            }
+
+            67% {
+                opacity: 0.76;
+
+                transform:
+                    translateX(-1px)
+                    skewX(0deg);
+            }
+
+            69% {
+                opacity: 0.94;
+
+                transform:
+                    translateX(0)
+                    skewX(0deg);
+            }
+
+
+            /* -----------------------------
+               FINAL CLEAN HOLD
+               ----------------------------- */
+
+            70% {
+                opacity: 0.92;
+
+                transform:
+                    translateX(0)
+                    skewX(0deg);
+            }
+
+            100% {
+                opacity: 0.92;
+
+                transform:
+                    translateX(0)
+                    skewX(0deg);
+            }
+
+        }
+
+
+        /* =================================
+           MAIN SCAN
+           ================================= */
+
+        .scan-line {
+
+            fill: #C9D1D9;
+
+            opacity: 0;
+
+            animation:
+                scan 10.5s linear infinite;
+        }
+
+
+        @keyframes scan {
+
+            0% {
+                opacity: 0;
+
+                transform:
+                    translateY(-30px);
+            }
+
+            10% {
+                opacity: 0;
+            }
+
+            16% {
+                opacity: 0.04;
+            }
+
+            24% {
+                opacity: 0.11;
+            }
+
+            31% {
+                opacity: 0.04;
+            }
+
+            38% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+
+                transform:
+                    translateY(549px);
+            }
+
+        }
+
+
+        /* =================================
+           FAST SECOND SCAN
+           ================================= */
+
+        .scan-line-fast {
+
+            fill: #FFFFFF;
+
+            opacity: 0;
+
+            animation:
+                fastScan 10.5s linear infinite;
+        }
+
+
+        @keyframes fastScan {
+
+            0% {
+                opacity: 0;
+
+                transform:
+                    translateY(529px);
+            }
+
+            38% {
+                opacity: 0;
+            }
+
+            43% {
+                opacity: 0.03;
+            }
+
+            46% {
+                opacity: 0.12;
+            }
+
+            49% {
+                opacity: 0.03;
+            }
+
+            52% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+
+                transform:
+                    translateY(-30px);
+            }
+
+        }
+
+
+        /* =================================
+           PORTRAIT FLASH
+           ================================= */
+
+        .portrait-flash {
+
+            fill: #FFFFFF;
+
+            opacity: 0;
+
+            animation:
+                flash 10.5s ease-in-out infinite;
+        }
+
+
+        @keyframes flash {
+
+            0% {
+                opacity: 0;
+            }
+
+            14% {
+                opacity: 0;
+            }
+
+            16% {
+                opacity: 0.035;
+            }
+
+            18% {
+                opacity: 0;
+            }
+
+            65% {
+                opacity: 0;
+            }
+
+            67% {
+                opacity: 0.045;
+            }
+
+            69% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0;
+            }
+
+        }
+
+
+        /* =================================
+           TERMINAL FRAME
+           ================================= */
+
+        .terminal-frame {
+
+            fill: none;
+
+            stroke: #C9D1D9;
+
+            stroke-width: 1;
+
+            opacity: 0.12;
+
+            animation:
+                framePulse 10.5s ease-in-out infinite;
+        }
+
+
+        @keyframes framePulse {
+
+            0% {
+                opacity: 0.08;
+            }
+
+            8% {
+                opacity: 0.40;
+            }
+
+            13% {
+                opacity: 0.15;
+            }
+
+            20% {
+                opacity: 0.20;
+            }
+
+            65% {
+                opacity: 0.14;
+            }
+
+            68% {
+                opacity: 0.38;
+            }
+
+            72% {
+                opacity: 0.13;
+            }
+
+            100% {
+                opacity: 0.10;
+            }
+
+        }
+
+
+        /* =================================
+           STATUS LIGHT
+           ================================= */
+
+        .status-light {
+
+            fill: #C9D1D9;
+
+            animation:
+                statusPulse 10.5s ease-in-out infinite;
+        }
+
+
+        @keyframes statusPulse {
+
+            0% {
+                opacity: 0.12;
+            }
+
+            8% {
+                opacity: 0.85;
+            }
+
+            12% {
+                opacity: 0.25;
+            }
+
+            30% {
+                opacity: 0.25;
+            }
+
+            65% {
+                opacity: 0.25;
+            }
+
+            69% {
+                opacity: 0.90;
+            }
+
+            73% {
+                opacity: 0.18;
+            }
+
+            100% {
+                opacity: 0.12;
+            }
+
+        }
+
+    </style>
+
+
+    <!-- =================================
+         ASCII PORTRAIT
+         ================================= -->
+
+    <g>
+        
+        <text
+            x="18"
+            y="29"
+            class="ascii-line"
+            style="
+                --delay:0.000s;
+                --direction:-14px;
+            "
+        >%##+++%@@*=#@+-%@@@#=+%@@@#==#@@@@@@@@@@@@%@@%=%@#-::-.:+%@@@@@@@@@@@@@@@@@@=###%%@#</text>
+        
+
+        <text
+            x="18"
+            y="40"
+            class="ascii-line"
+            style="
+                --delay:0.075s;
+                --direction:14px;
+            "
+        >##%**@@*+#%#+*%@@#*#@@@@**##@@@@@@@@@@@@@@@@@@@#-::::-*@@#-*@@@@@@@@@@@@@@@%%#%@%*-.</text>
+        
+
+        <text
+            x="18"
+            y="51"
+            class="ascii-line"
+            style="
+                --delay:0.150s;
+                --direction:-14px;
+            "
+        >*#@#*#+#%#*%@@@*+#@@@@*=-@@@@%+=@@%%####%%%%@%@#::--#@%+:::.*@@@@@@@@@@@@%##@@#+:...</text>
+        
+
+        <text
+            x="18"
+            y="62"
+            class="ascii-line"
+            style="
+                --delay:0.225s;
+                --direction:14px;
+            "
+        >@%#%+#%*=+@@@*=+%@@%#++%@@@%+-=*+=-:----:.:----+=-*@%=:.-::-*@@@@@@@@@%%#@@%*-......</text>
+        
+
+        <text
+            x="18"
+            y="73"
+            class="ascii-line"
+            style="
+                --delay:0.300s;
+                --direction:-14px;
+            "
+        >#++@#*#*@@@***%@@%*#%@@@#*+--===---==:..::--:::.::::::=--+#@@**@@@@@@##@@#=:....:.-=</text>
+        
+
+        <text
+            x="18"
+            y="84"
+            class="ascii-line"
+            style="
+                --delay:0.375s;
+                --direction:14px;
+            "
+        >*%@@%=@@@*-#@@@%+=@@%#+------:-:.:::...::................-++-::+@@@@@@%+:....::-==+*</text>
+        
+
+        <text
+            x="18"
+            y="95"
+            class="ascii-line"
+            style="
+                --delay:0.450s;
+                --direction:-14px;
+            "
+        >%++@@*##+*@@@%+=+#*=--:::....................................--:#@@@@@@*-.::-==+**##</text>
+        
+
+        <text
+            x="18"
+            y="106"
+            class="ascii-line"
+            style="
+                --delay:0.525s;
+                --direction:14px;
+            "
+        >=*%@%#=%@@@#+#%@@-..-:........................................:*@%@@@@@@%*****####%%</text>
+        
+
+        <text
+            x="18"
+            y="117"
+            class="ascii-line"
+            style="
+                --delay:0.600s;
+                --direction:-14px;
+            "
+        >%@*#@%+@@#=+%@@@#.:............................................-=:+@@@@@@%%%%%%%%%%%</text>
+        
+
+        <text
+            x="18"
+            y="128"
+            class="ascii-line"
+            style="
+                --delay:0.675s;
+                --direction:14px;
+            "
+        >#==*@%%*##%@@%+=::.........::::..................................=:=@@@@@@@@@@@%@@@@</text>
+        
+
+        <text
+            x="18"
+            y="139"
+            class="ascii-line"
+            style="
+                --delay:0.750s;
+                --direction:-14px;
+            "
+        >#+%@%@%+%@@@#=-:.......:=+*+-:...................................:==%@@@@@@@@@@@@@@@</text>
+        
+
+        <text
+            x="18"
+            y="150"
+            class="ascii-line"
+            style="
+                --delay:0.825s;
+                --direction:14px;
+            "
+        >#%#=*@@##%*+#=-......:*#%%*:..::::................................+@%*@@@@@@@@@@@@@@</text>
+        
+
+        <text
+            x="18"
+            y="161"
+            class="ascii-line"
+            style="
+                --delay:0.900s;
+                --direction:-14px;
+            "
+        >%*-*%@@%*#%%*:=.....:#@%%=::-==---.........::......................=-.=@@@@@@@@@@@@@</text>
+        
+
+        <text
+            x="18"
+            y="172"
+            class="ascii-line"
+            style="
+                --delay:0.975s;
+                --direction:14px;
+            "
+        >%%%@@%@@##@+:.-...:.+@@#=::::-:...........-=--:....................:-=:-@@@@@@@@@@@@</text>
+        
+
+        <text
+            x="18"
+            y="183"
+            class="ascii-line"
+            style="
+                --delay:1.050s;
+                --direction:-14px;
+            "
+        >%%%*=+@@@*#-:::..:-:#@%*===--:...........-#*+-:...................:=:--+@@@@@@@@@@@@</text>
+        
+
+        <text
+            x="18"
+            y="194"
+            class="ascii-line"
+            style="
+                --delay:1.125s;
+                --direction:14px;
+            "
+        >%%#=%@@@@%*-:::=:--=@@%####*+=-::::::::-+*%#*=:...................-=+#@@@*@@@@@@@@@@</text>
+        
+
+        <text
+            x="18"
+            y="205"
+            class="ascii-line"
+            style="
+                --delay:1.200s;
+                --direction:-14px;
+            "
+        >+@%@@%#@@@-.......:#@@@@%%%%#**++=====+*#%%##*=:.................=#@@@#=:.-@@@@@@@@@</text>
+        
+
+        <text
+            x="18"
+            y="216"
+            class="ascii-line"
+            style="
+                --delay:1.275s;
+                --direction:14px;
+            "
+        >%@%%*-+@@+.:.--::.-@@@@@@%%#**++===--*#%%%*+++*=-::::::::::::..-#@@%+-::--::%@@@@@@@</text>
+        
+
+        <text
+            x="18"
+            y="227"
+            class="ascii-line"
+            style="
+                --delay:1.350s;
+                --direction:-14px;
+            "
+        >%%@%=%@@@*.::=:...*@@@%%#*+==---:::::==-:------===:---===----+#@@+-:::--::--*@@@@@@@</text>
+        
+
+        <text
+            x="18"
+            y="238"
+            class="ascii-line"
+            style="
+                --delay:1.425s;
+                --direction:14px;
+            "
+        >=+@%@@@%@@+.-=...:*@@%#++=--::::::::-:.....::::..::.:---===--:-+::--=-::-+%@@@@@@@@@</text>
+        
+
+        <text
+            x="18"
+            y="249"
+            class="ascii-line"
+            style="
+                --delay:1.500s;
+                --direction:-14px;
+            "
+        >#@%%@*==@@@#::.:-.#@%+==--::::....::-:............::.::-----=..#+:--:=+#@@@%+-:%@@@@</text>
+        
+
+        <text
+            x="18"
+            y="260"
+            class="ascii-line"
+            style="
+                --delay:1.575s;
+                --direction:14px;
+            "
+        >@%%%%-#@@@@@+--+=-*#*=---::::......................::::::::--:.#@-:+#@@@%+-..:::%@@@</text>
+        
+
+        <text
+            x="18"
+            y="271"
+            class="ascii-line"
+            style="
+                --delay:1.650s;
+                --direction:-14px;
+            "
+        >#=+@@@%@@@@@%*=-:-*=-::::::::..........:.::.:.........:::::--.:%@@@@@%*-:.:::::..#@@</text>
+        
+
+        <text
+            x="18"
+            y="282"
+            class="ascii-line"
+            style="
+                --delay:1.725s;
+                --direction:14px;
+            "
+        >-#%%%%%*-#@@%*@#+:+--::::::::.......:::-:==-=---:......::::::#@@@@@*-:::--:::.:=*%@@</text>
+        
+
+        <text
+            x="18"
+            y="293"
+            class="ascii-line"
+            style="
+                --delay:1.800s;
+                --direction:-14px;
+            "
+        >%%@%%@-+%%%@@#*##:-::::.::::::.:::---::::::::--:-:.....:::::-@@@@@@#.:--::.:=*%@@@##</text>
+        
+
+        <text
+            x="18"
+            y="304"
+            class="ascii-line"
+            style="
+                --delay:1.875s;
+                --direction:14px;
+            "
+        >#%*=%@%@%@@@@%+@@-::.....::::::::----:......::::.::....::.:.=@@@@@@@#..:-=*%@@@#+-..</text>
+        
+
+        <text
+            x="18"
+            y="315"
+            class="ascii-line"
+            style="
+                --delay:1.950s;
+                --direction:-14px;
+            "
+        >%-+%%%%%%++@@@#%@#........:::::::-----:...........::........%@@@@@@@@*=#@@@@#+:...::</text>
+        
+
+        <text
+            x="18"
+            y="326"
+            class="ascii-line"
+            style="
+                --delay:2.025s;
+                --direction:14px;
+            "
+        >%#%%@%@+-+*@@@#*@%*:............:-----==--:::...:::........*@@@@@@@@@@@@@#+:...:::::</text>
+        
+
+        <text
+            x="18"
+            y="337"
+            class="ascii-line"
+            style="
+                --delay:2.100s;
+                --direction:-14px;
+            "
+        >%%%%*%@*#@@@@@@**%@#=...............:.::.......::::.......*@@@@@@@@@@@@#...::::::..:</text>
+        
+
+        <text
+            x="18"
+            y="348"
+            class="ascii-line"
+            style="
+                --delay:2.175s;
+                --direction:14px;
+            "
+        >#%+-+%%@@@@%@@@##@%*=:..................................:#@@@@@@@@@@@%@@-.:::...-+*%</text>
+        
+
+        <text
+            x="18"
+            y="359"
+            class="ascii-line"
+            style="
+                --delay:2.250s;
+                --direction:-14px;
+            "
+        >%%=%%%%%%#+-%@@@+@%*+-:...............................=#@@@@@@@@@@@@@@@@@-..:-+#@@@@</text>
+        
+
+        <text
+            x="18"
+            y="370"
+            class="ascii-line"
+            style="
+                --delay:2.325s;
+                --direction:14px;
+            "
+        >%%@%%@%@#:#@@@@@#%#++=-::...........................=@@@@@@@@@@@@@%@@@@@@@=+%@@@@#+-</text>
+        
+
+        <text
+            x="18"
+            y="381"
+            class="ascii-line"
+            style="
+                --delay:2.400s;
+                --direction:-14px;
+            "
+        >%%%%*=#@%%@@@@@@%%*+=----:..........................#@@@@@@@@@@@@@%@@@@@@@@@@@#+:...</text>
+        
+
+        <text
+            x="18"
+            y="392"
+            class="ascii-line"
+            style="
+                --delay:2.475s;
+                --direction:14px;
+            "
+        >%%@-=%%%%@@@%*#@@#*+===--::.........................%@@@@@@@@@@@@@@@@@@@@@%@+:...:::</text>
+        
+
+        <text
+            x="18"
+            y="403"
+            class="ascii-line"
+            style="
+                --delay:2.550s;
+                --direction:-14px;
+            "
+        >%%@#%@%%%%#++*+%%**+==----::........................*@@%@@@@@@@@@@@@@@@@@@@@#..:::::</text>
+        
+
+        <text
+            x="18"
+            y="414"
+            class="ascii-line"
+            style="
+                --delay:2.625s;
+                --direction:14px;
+            "
+        >%#%%@@%%@@-*@*=##*++=---:::..........................=*=@@@@@@@@@@@@@@@@@@@%@#.....:</text>
+        
+
+        <text
+            x="18"
+            y="425"
+            class="ascii-line"
+            style="
+                --delay:2.700s;
+                --direction:-14px;
+            "
+        >@%%%%*=*@@%@@%*-=++=--:::.........................::.:##%%@@@@@@@@@@@@@@@@@@%@#.:=*%</text>
+        
+
+        <text
+            x="18"
+            y="436"
+            class="ascii-line"
+            style="
+                --delay:2.775s;
+                --direction:14px;
+            "
+        >@%%@=-%@@@@@@%#+--::-----:........................::.:::=++#%%@@@@@@@@@%%@@@@%@%%@@@</text>
+        
+
+        <text
+            x="18"
+            y="447"
+            class="ascii-line"
+            style="
+                --delay:2.850s;
+                --direction:-14px;
+            "
+        >@%%@%@@@@@@%%#**+=--::.::::::::::....................:-======++*#%%@@@%%@@@@@@%@@%*+</text>
+        
+
+        <text
+            x="18"
+            y="458"
+            class="ascii-line"
+            style="
+                --delay:2.925s;
+                --direction:14px;
+            "
+        >@@%%@@%%@@@@%##*#*==--:::........................:::--=--=-====++**##**%%%%%%%%%@*-:</text>
+        
+
+        <text
+            x="18"
+            y="469"
+            class="ascii-line"
+            style="
+                --delay:3.000s;
+                --direction:-14px;
+            "
+        >@@@@@@@@@%%%%%%%%%%##*++++=-------:::::::::--------------------===++##*#**#*+*###%%%</text>
+        
+
+        <text
+            x="18"
+            y="480"
+            class="ascii-line"
+            style="
+                --delay:3.075s;
+                --direction:14px;
+            "
+        >@@@@@@@@@@@@@%%########*******++=======-=------------------=====--==+*#*++*#**+*****</text>
+        
+
+        <text
+            x="18"
+            y="491"
+            class="ascii-line"
+            style="
+                --delay:3.150s;
+                --direction:-14px;
+            "
+        >%@@@@@@@@%%#%%%##%###******+++++====-------==--===================--==++*++**++*****</text>
+        
+    </g>
+
+
+    <!-- =================================
+         SUBTLE PORTRAIT FLASH
+         ================================= -->
+
+    <rect
+        class="portrait-flash"
+        x="0"
+        y="0"
+        width="708"
+        height="509"
+    />
+
+
+    <!-- =================================
+         SCAN EFFECTS
+         ================================= -->
+
+    <rect
+        class="scan-line"
+        x="0"
+        y="0"
+        width="708"
+        height="2"
+    />
+
+    <rect
+        class="scan-line-fast"
+        x="0"
+        y="0"
+        width="708"
+        height="1"
+    />
+
+
+    <!-- =================================
+         TERMINAL FRAME
+         ================================= -->
+
+    <rect
+        class="terminal-frame"
+        x="5"
+        y="5"
+        width="698"
+        height="499"
+        rx="8"
+    />
+
+
+    <!-- =================================
+         STATUS LIGHT
+         ================================= -->
+
+    <circle
+        class="status-light"
+        cx="692"
+        cy="14"
+        r="2"
+    />
+
+</svg>
