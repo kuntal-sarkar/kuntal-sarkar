@@ -1,14 +1,8 @@
 name: Update GitHub Stats
 
 on:
-  push:
-    branches:
-      - "**"
-    paths-ignore:
-      - "assets/github-stats.svg"
-
   schedule:
-    - cron: "17 */6 * * *"
+    - cron: "7,22,37,52 * * * *"
 
   workflow_dispatch:
 
@@ -20,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout current branch
+      - name: Checkout main
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.ref_name }}
+          ref: main
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -47,5 +41,5 @@ jobs:
             echo "No stats changes detected."
           else
             git commit -m "Auto-update GitHub stats"
-            git push origin HEAD:${{ github.ref_name }}
+            git push origin main
           fi
