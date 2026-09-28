@@ -26,50 +26,69 @@ CSE Student • Aspiring Software Developer
 
 ## `01` — About Me
 
-```cpp
-class Kuntal {
+<div align="center">
 
-public:
+<img src="./assets/terminal-card.svg" alt="About Me"/>
 
-    string role = "CSE Student";
-
-    string focus = "Software Development";
-
-    vector<string> learning = {
-
-        "Backend Development",
-
-        "Python",
-
-        "Java"
-
-    };
-
-    vector<string> exploring = {
-
-        "Cybersecurity",
-
-        "Artificial Intelligence"
-
-    };
-
-    string philosophy =
-
-        "Build. Break. Learn. Repeat.";
-
-};
-```
-
-* 🔭 Currently working on Vajra
-* 🌱 Currently learning Backend Development, Python & Java
-* 🧠 Practicing Data Structures & Algorithms
-* 💻 Building projects and experimenting with new technologies
-* 🔐 Exploring Cybersecurity & AI
-* ⚡ Fun fact: I write code. Sometimes it even works. 💀
+</div>
 
 ---
 
-## `02` — Tech Arsenal
+## `02` — Current Mission
+
+<table>
+<tr>
+
+<td width="50%" valign="top">
+
+### ⚡ Vajra
+
+Building an AI-powered robotics project focused on autonomous movement, real-time perception and practical real-world applications.
+
+</td>
+
+<td width="50%" valign="top">
+
+### 🧠 DSA
+
+Strengthening problem-solving skills through C++, data structures, algorithms and regular practice.
+
+</td>
+
+</tr>
+</table>
+
+<br>
+
+<div align="center">
+
+`BUILD` • `LEARN` • `PRACTICE` • `EXPLORE`
+
+</div>
+
+---
+
+## `03` — Currently Loading...
+
+<div align="center">
+
+<img src="./assets/progress.svg" alt="Currently Loading"/>
+
+</div>
+
+---
+
+## `04` — GitHub Analytics
+
+<div align="center">
+
+<img src="./assets/github-stats.svg" alt="GitHub Analytics"/>
+
+</div>
+
+---
+
+## `05` — Tech Arsenal
 
 ### Languages
 
@@ -102,52 +121,6 @@ public:
 <img src="https://skillicons.dev/icons?i=firebase,opencv,arduino" />
 
 </p>
-
----
-
-## `03` — Current Mission
-
-<table>
-<tr>
-
-<td width="50%" valign="top">
-
-### ⚡ Vajra
-
-Working on an ongoing project focused on building practical technology for a real-world use case.
-
-</td>
-
-<td width="50%" valign="top">
-
-### 🧠 DSA
-
-Sharpening problem-solving skills with C++, algorithms and data structures.
-
-</td>
-
-</tr>
-</table>
-
----
-
-## `04` — Currently Loading...
-
-<div align="center">
-
-<img src="./assets/progress.svg" alt="Currently Loading"/>
-
-</div>
-
----
-
-## `05` — GitHub Analytics
-
-<div align="center">
-
-<img src="./assets/github-stats.svg" alt="GitHub Analytics"/>
-
-</div>
 
 ---
 
@@ -189,16 +162,6 @@ Sharpening problem-solving skills with C++, algorithms and data structures.
 
 ---
 
-## `07` — Terminal
-
-<div align="center">
-
-<img src="./assets/terminal-card.svg" alt="Terminal"/>
-
-</div>
-
----
-
 <div align="center">
 
 ```text
@@ -208,12 +171,11 @@ while(alive) {
     breakThings();
     fixThem();
 }
-```
 
 <br>
 
 Thanks for visiting my profile. 🚀
 
-`[ SYSTEM STATUS: ONLINE ]`
+[ SYSTEM STATUS: ONLINE ]
 
-</div>
+</div> ```
