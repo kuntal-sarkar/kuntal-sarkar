@@ -190,6 +190,6 @@ Strengthening problem-solving skills through C++, data structures, algorithms an
 
 <br><br>
 
-<img src="https://img.shields.io/badge/SYSTEM_STATUS-ONLINE-00F7FF?style=for-the-badge&labelColor=0D1117&color=00F7FF" alt="System Status: Online"/>
+<img src="https://img.shields.io/badge/SYSTEM_STATUS-ONLINE-8B949E?style=for-the-badge&labelColor=0D1117&color=8B949E" alt="System Status: Online"/>
 
 </div>
