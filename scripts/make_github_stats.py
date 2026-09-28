@@ -646,7 +646,5 @@ OUTPUT.write_text(
 print(f"Generated: {OUTPUT}")
 print()
 print(f"Total contributions : {total_contributions}")
-print(f"Commits             : {commits}")
-print(f"Pull requests       : {pull_requests}")
 print(f"Issues              : {issues}")
-print(f"Top language        : {top_language}")
+print(f"Reviews             : {reviews}")
