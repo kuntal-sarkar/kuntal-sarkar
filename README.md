@@ -1,10 +1,8 @@
 <div align="center">
 
-"Hello, World! 👋"
+# `Hello, World! 👋`
 
-<br>
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=650&lines=I'm+Kuntal+Sarkar;CSE+Student+%7C+Software+Developer;Building+%7C+Learning+%7C+Breaking+Things;Exploring+Cybersecurity+%26+AI" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=650&lines=I'm+Kuntal+Sarkar;CSE+Student+%7C+Software+Developer;Building+%7C+Learning+%7C+Breaking+Things;Exploring+Cybersecurity+%26+AI" alt="Typing SVG" />
 
 <br><br>
 
@@ -16,9 +14,11 @@
 
 <br><br>
 
-CSE Student • Aspiring Software Developer
+### CSE Student • Aspiring Software Developer
 
-"C/C++" "Python" "DSA" "JavaScript" "React" "SQL" "Web Development" "Cybersecurity"
+`C/C++` &nbsp; `Python` &nbsp; `DSA` &nbsp; `JavaScript` &nbsp; `React`
+
+`SQL` &nbsp; `Web Development` &nbsp; `Cybersecurity`
 
 </div>
 
@@ -132,27 +132,35 @@ Strengthening problem-solving skills through C++, data structures, algorithms an
 <tr>
 
 <td>
+
 <a href="https://www.linkedin.com/in/kuntal-sarkar-dev">
 <img src="./assets/connect-linkedin.svg" alt="LinkedIn"/>
 </a>
+
 </td>
 
 <td>
+
 <a href="https://leetcode.com/kuntal_exe">
 <img src="./assets/connect-leetcode.svg" alt="LeetCode"/>
 </a>
+
 </td>
 
 <td>
+
 <a href="https://twitter.com/kuntal_074">
 <img src="./assets/connect-x.svg" alt="X"/>
 </a>
+
 </td>
 
 <td>
+
 <a href="https://instagram.com/kuntal.exe.x">
 <img src="./assets/connect-instagram.svg" alt="Instagram"/>
 </a>
+
 </td>
 
 </tr>
@@ -164,18 +172,24 @@ Strengthening problem-solving skills through C++, data structures, algorithms an
 
 <div align="center">
 
-```text
-while(alive) {
-    learn();
-    build();
-    breakThings();
-    fixThem();
-}
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=500&lines=while(alive)+%7B;learn();+build();+breakThings();+fixThem();+%7D" alt="Coding mindset"/>
 
-<br>
+<br><br>
 
-Thanks for visiting my profile. 🚀
+<code>BUILD</code>
+&nbsp; • &nbsp;
+<code>LEARN</code>
+&nbsp; • &nbsp;
+<code>BREAK</code>
+&nbsp; • &nbsp;
+<code>FIX</code>
 
-[ SYSTEM STATUS: ONLINE ]
+<br><br>
 
-</div> ```
+<strong>Thanks for visiting my profile. 🚀</strong>
+
+<br><br>
+
+<img src="https://img.shields.io/badge/SYSTEM_STATUS-ONLINE-00F7FF?style=for-the-badge&labelColor=0D1117&color=00F7FF" alt="System Status: Online"/>
+
+</div>
