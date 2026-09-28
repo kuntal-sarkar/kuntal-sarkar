@@ -345,7 +345,7 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg"
     fill="{TEXT}"
     font-size="18"
     class="terminal bold">
-    05 — GITHUB ANALYTICS
+    04 — GITHUB ANALYTICS
 </text>
 
 

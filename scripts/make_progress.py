@@ -294,7 +294,7 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg"
     fill="{TEXT}"
     font-size="17"
     class="terminal bold">
-    04 — CURRENTLY LOADING...
+    03 — CURRENTLY LOADING...
 </text>
 
 '''
