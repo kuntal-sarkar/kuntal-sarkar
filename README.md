@@ -1,6 +1,6 @@
 <div align="center">
 
-# `Hello, World! 👋`
+# `>_ Hello, World! 👋`
 
 <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=650&lines=I'm+Kuntal+Sarkar;CSE+Student+%7C+Software+Developer;Building+%7C+Learning+%7C+Breaking+Things;Exploring+Cybersecurity+%26+AI" alt="Typing SVG" />
 
