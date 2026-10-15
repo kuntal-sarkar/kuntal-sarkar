@@ -164,7 +164,7 @@
     x="65"
     y="220"
     class="terminal value">
-    75
+    76
 </text>
 
 
@@ -284,7 +284,7 @@
     <animate
         attributeName="width"
         from="0"
-        to="199.85"
+        to="162.87"
         dur="5.5s"
         begin="0.45s"
         fill="freeze"
@@ -306,7 +306,7 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
+        dur="0.1019s"
         begin="0.4500s"
         fill="freeze"
     />
@@ -327,8 +327,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="0.5321s"
+        dur="0.1019s"
+        begin="0.5519s"
         fill="freeze"
     />
 
@@ -348,8 +348,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="0.6142s"
+        dur="0.1019s"
+        begin="0.6537s"
         fill="freeze"
     />
 
@@ -369,8 +369,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="0.6963s"
+        dur="0.1019s"
+        begin="0.7556s"
         fill="freeze"
     />
 
@@ -390,8 +390,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="0.7784s"
+        dur="0.1019s"
+        begin="0.8574s"
         fill="freeze"
     />
 
@@ -411,8 +411,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="0.8604s"
+        dur="0.1019s"
+        begin="0.9593s"
         fill="freeze"
     />
 
@@ -432,8 +432,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="0.9425s"
+        dur="0.1019s"
+        begin="1.0611s"
         fill="freeze"
     />
 
@@ -453,8 +453,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="1.0246s"
+        dur="0.1019s"
+        begin="1.1630s"
         fill="freeze"
     />
 
@@ -474,8 +474,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="1.1067s"
+        dur="0.1019s"
+        begin="1.2648s"
         fill="freeze"
     />
 
@@ -495,8 +495,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="1.1888s"
+        dur="0.1019s"
+        begin="1.3667s"
         fill="freeze"
     />
 
@@ -516,8 +516,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="1.2709s"
+        dur="0.1019s"
+        begin="1.4685s"
         fill="freeze"
     />
 
@@ -537,8 +537,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="1.3530s"
+        dur="0.1019s"
+        begin="1.5704s"
         fill="freeze"
     />
 
@@ -558,8 +558,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="1.4351s"
+        dur="0.1019s"
+        begin="1.6722s"
         fill="freeze"
     />
 
@@ -579,8 +579,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="1.5172s"
+        dur="0.1019s"
+        begin="1.7741s"
         fill="freeze"
     />
 
@@ -600,8 +600,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="1.5993s"
+        dur="0.1019s"
+        begin="1.8759s"
         fill="freeze"
     />
 
@@ -621,8 +621,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="1.6813s"
+        dur="0.1019s"
+        begin="1.9778s"
         fill="freeze"
     />
 
@@ -642,8 +642,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="1.7634s"
+        dur="0.1019s"
+        begin="2.0796s"
         fill="freeze"
     />
 
@@ -663,8 +663,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="1.8455s"
+        dur="0.1019s"
+        begin="2.1815s"
         fill="freeze"
     />
 
@@ -684,8 +684,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="1.9276s"
+        dur="0.1019s"
+        begin="2.2833s"
         fill="freeze"
     />
 
@@ -705,8 +705,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="2.0097s"
+        dur="0.1019s"
+        begin="2.3852s"
         fill="freeze"
     />
 
@@ -726,8 +726,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="2.0918s"
+        dur="0.1019s"
+        begin="2.4870s"
         fill="freeze"
     />
 
@@ -747,8 +747,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="2.1739s"
+        dur="0.1019s"
+        begin="2.5889s"
         fill="freeze"
     />
 
@@ -768,8 +768,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="2.2560s"
+        dur="0.1019s"
+        begin="2.6907s"
         fill="freeze"
     />
 
@@ -789,8 +789,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="2.3381s"
+        dur="0.1019s"
+        begin="2.7926s"
         fill="freeze"
     />
 
@@ -810,8 +810,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="2.4201s"
+        dur="0.1019s"
+        begin="2.8944s"
         fill="freeze"
     />
 
@@ -831,8 +831,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="2.5022s"
+        dur="0.1019s"
+        begin="2.9963s"
         fill="freeze"
     />
 
@@ -852,8 +852,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="2.5843s"
+        dur="0.1019s"
+        begin="3.0981s"
         fill="freeze"
     />
 
@@ -873,8 +873,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="2.6664s"
+        dur="0.1019s"
+        begin="3.2000s"
         fill="freeze"
     />
 
@@ -894,8 +894,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="2.7485s"
+        dur="0.1019s"
+        begin="3.3019s"
         fill="freeze"
     />
 
@@ -915,8 +915,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="2.8306s"
+        dur="0.1019s"
+        begin="3.4037s"
         fill="freeze"
     />
 
@@ -936,8 +936,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="2.9127s"
+        dur="0.1019s"
+        begin="3.5056s"
         fill="freeze"
     />
 
@@ -957,8 +957,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="2.9948s"
+        dur="0.1019s"
+        begin="3.6074s"
         fill="freeze"
     />
 
@@ -978,8 +978,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="3.0769s"
+        dur="0.1019s"
+        begin="3.7093s"
         fill="freeze"
     />
 
@@ -999,8 +999,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="3.1590s"
+        dur="0.1019s"
+        begin="3.8111s"
         fill="freeze"
     />
 
@@ -1020,8 +1020,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="3.2410s"
+        dur="0.1019s"
+        begin="3.9130s"
         fill="freeze"
     />
 
@@ -1041,8 +1041,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="3.3231s"
+        dur="0.1019s"
+        begin="4.0148s"
         fill="freeze"
     />
 
@@ -1062,8 +1062,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="3.4052s"
+        dur="0.1019s"
+        begin="4.1167s"
         fill="freeze"
     />
 
@@ -1083,8 +1083,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="3.4873s"
+        dur="0.1019s"
+        begin="4.2185s"
         fill="freeze"
     />
 
@@ -1104,8 +1104,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="3.5694s"
+        dur="0.1019s"
+        begin="4.3204s"
         fill="freeze"
     />
 
@@ -1125,8 +1125,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="3.6515s"
+        dur="0.1019s"
+        begin="4.4222s"
         fill="freeze"
     />
 
@@ -1146,8 +1146,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="3.7336s"
+        dur="0.1019s"
+        begin="4.5241s"
         fill="freeze"
     />
 
@@ -1167,8 +1167,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="3.8157s"
+        dur="0.1019s"
+        begin="4.6259s"
         fill="freeze"
     />
 
@@ -1188,8 +1188,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="3.8978s"
+        dur="0.1019s"
+        begin="4.7278s"
         fill="freeze"
     />
 
@@ -1209,8 +1209,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="3.9799s"
+        dur="0.1019s"
+        begin="4.8296s"
         fill="freeze"
     />
 
@@ -1230,8 +1230,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="4.0619s"
+        dur="0.1019s"
+        begin="4.9315s"
         fill="freeze"
     />
 
@@ -1251,8 +1251,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="4.1440s"
+        dur="0.1019s"
+        begin="5.0333s"
         fill="freeze"
     />
 
@@ -1272,8 +1272,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="4.2261s"
+        dur="0.1019s"
+        begin="5.1352s"
         fill="freeze"
     />
 
@@ -1293,8 +1293,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="4.3082s"
+        dur="0.1019s"
+        begin="5.2370s"
         fill="freeze"
     />
 
@@ -1314,8 +1314,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="4.3903s"
+        dur="0.1019s"
+        begin="5.3389s"
         fill="freeze"
     />
 
@@ -1335,8 +1335,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="4.4724s"
+        dur="0.1019s"
+        begin="5.4407s"
         fill="freeze"
     />
 
@@ -1356,8 +1356,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="4.5545s"
+        dur="0.1019s"
+        begin="5.5426s"
         fill="freeze"
     />
 
@@ -1377,8 +1377,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="4.6366s"
+        dur="0.1019s"
+        begin="5.6444s"
         fill="freeze"
     />
 
@@ -1398,8 +1398,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="4.7187s"
+        dur="0.1019s"
+        begin="5.7463s"
         fill="freeze"
     />
 
@@ -1419,8 +1419,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="4.8007s"
+        dur="0.1019s"
+        begin="5.8481s"
         fill="freeze"
     />
 
@@ -1434,285 +1434,12 @@
     class="terminal bold counter-frame"
     opacity="0">
 
-    54%
-
-    <animate
-        attributeName="opacity"
-        values="0;1;1;0"
-        keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="4.8828s"
-        fill="freeze"
-    />
-
-</text>
-
-<text
-    x="785"
-    y="292"
-    fill="#7EE787"
-    font-size="14"
-    class="terminal bold counter-frame"
-    opacity="0">
-
-    55%
-
-    <animate
-        attributeName="opacity"
-        values="0;1;1;0"
-        keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="4.9649s"
-        fill="freeze"
-    />
-
-</text>
-
-<text
-    x="785"
-    y="292"
-    fill="#7EE787"
-    font-size="14"
-    class="terminal bold counter-frame"
-    opacity="0">
-
-    56%
-
-    <animate
-        attributeName="opacity"
-        values="0;1;1;0"
-        keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="5.0470s"
-        fill="freeze"
-    />
-
-</text>
-
-<text
-    x="785"
-    y="292"
-    fill="#7EE787"
-    font-size="14"
-    class="terminal bold counter-frame"
-    opacity="0">
-
-    57%
-
-    <animate
-        attributeName="opacity"
-        values="0;1;1;0"
-        keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="5.1291s"
-        fill="freeze"
-    />
-
-</text>
-
-<text
-    x="785"
-    y="292"
-    fill="#7EE787"
-    font-size="14"
-    class="terminal bold counter-frame"
-    opacity="0">
-
-    58%
-
-    <animate
-        attributeName="opacity"
-        values="0;1;1;0"
-        keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="5.2112s"
-        fill="freeze"
-    />
-
-</text>
-
-<text
-    x="785"
-    y="292"
-    fill="#7EE787"
-    font-size="14"
-    class="terminal bold counter-frame"
-    opacity="0">
-
-    59%
-
-    <animate
-        attributeName="opacity"
-        values="0;1;1;0"
-        keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="5.2933s"
-        fill="freeze"
-    />
-
-</text>
-
-<text
-    x="785"
-    y="292"
-    fill="#7EE787"
-    font-size="14"
-    class="terminal bold counter-frame"
-    opacity="0">
-
-    60%
-
-    <animate
-        attributeName="opacity"
-        values="0;1;1;0"
-        keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="5.3754s"
-        fill="freeze"
-    />
-
-</text>
-
-<text
-    x="785"
-    y="292"
-    fill="#7EE787"
-    font-size="14"
-    class="terminal bold counter-frame"
-    opacity="0">
-
-    61%
-
-    <animate
-        attributeName="opacity"
-        values="0;1;1;0"
-        keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="5.4575s"
-        fill="freeze"
-    />
-
-</text>
-
-<text
-    x="785"
-    y="292"
-    fill="#7EE787"
-    font-size="14"
-    class="terminal bold counter-frame"
-    opacity="0">
-
-    62%
-
-    <animate
-        attributeName="opacity"
-        values="0;1;1;0"
-        keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="5.5396s"
-        fill="freeze"
-    />
-
-</text>
-
-<text
-    x="785"
-    y="292"
-    fill="#7EE787"
-    font-size="14"
-    class="terminal bold counter-frame"
-    opacity="0">
-
-    63%
-
-    <animate
-        attributeName="opacity"
-        values="0;1;1;0"
-        keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="5.6216s"
-        fill="freeze"
-    />
-
-</text>
-
-<text
-    x="785"
-    y="292"
-    fill="#7EE787"
-    font-size="14"
-    class="terminal bold counter-frame"
-    opacity="0">
-
-    64%
-
-    <animate
-        attributeName="opacity"
-        values="0;1;1;0"
-        keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="5.7037s"
-        fill="freeze"
-    />
-
-</text>
-
-<text
-    x="785"
-    y="292"
-    fill="#7EE787"
-    font-size="14"
-    class="terminal bold counter-frame"
-    opacity="0">
-
-    65%
-
-    <animate
-        attributeName="opacity"
-        values="0;1;1;0"
-        keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="5.7858s"
-        fill="freeze"
-    />
-
-</text>
-
-<text
-    x="785"
-    y="292"
-    fill="#7EE787"
-    font-size="14"
-    class="terminal bold counter-frame"
-    opacity="0">
-
-    66%
-
-    <animate
-        attributeName="opacity"
-        values="0;1;1;0"
-        keyTimes="0;0.01;0.99;1"
-        dur="0.0821s"
-        begin="5.8679s"
-        fill="freeze"
-    />
-
-</text>
-
-<text
-    x="785"
-    y="292"
-    fill="#7EE787"
-    font-size="14"
-    class="terminal bold counter-frame"
-    opacity="0">
-
-    66.6%
+    54.3%
 
     <animate
         attributeName="opacity"
         values="0;1;1"
-        dur="0.0821s"
+        dur="0.1019s"
         begin="5.9500s"
         fill="freeze"
     />
@@ -1725,7 +1452,7 @@
     fill="#8B949E"
     font-size="14"
     class="terminal">
-    Python
+    CSS
 </text>
 
 <rect
@@ -1748,7 +1475,7 @@
     <animate
         attributeName="width"
         from="0"
-        to="77.46"
+        to="99.00"
         dur="5.5s"
         begin="0.65s"
         fill="freeze"
@@ -1770,7 +1497,7 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
+        dur="0.1667s"
         begin="0.6500s"
         fill="freeze"
     />
@@ -1791,8 +1518,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
-        begin="0.8615s"
+        dur="0.1667s"
+        begin="0.8167s"
         fill="freeze"
     />
 
@@ -1812,8 +1539,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
-        begin="1.0731s"
+        dur="0.1667s"
+        begin="0.9833s"
         fill="freeze"
     />
 
@@ -1833,8 +1560,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
-        begin="1.2846s"
+        dur="0.1667s"
+        begin="1.1500s"
         fill="freeze"
     />
 
@@ -1854,8 +1581,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
-        begin="1.4962s"
+        dur="0.1667s"
+        begin="1.3167s"
         fill="freeze"
     />
 
@@ -1875,8 +1602,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
-        begin="1.7077s"
+        dur="0.1667s"
+        begin="1.4833s"
         fill="freeze"
     />
 
@@ -1896,8 +1623,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
-        begin="1.9192s"
+        dur="0.1667s"
+        begin="1.6500s"
         fill="freeze"
     />
 
@@ -1917,8 +1644,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
-        begin="2.1308s"
+        dur="0.1667s"
+        begin="1.8167s"
         fill="freeze"
     />
 
@@ -1938,8 +1665,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
-        begin="2.3423s"
+        dur="0.1667s"
+        begin="1.9833s"
         fill="freeze"
     />
 
@@ -1959,8 +1686,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
-        begin="2.5538s"
+        dur="0.1667s"
+        begin="2.1500s"
         fill="freeze"
     />
 
@@ -1980,8 +1707,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
-        begin="2.7654s"
+        dur="0.1667s"
+        begin="2.3167s"
         fill="freeze"
     />
 
@@ -2001,8 +1728,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
-        begin="2.9769s"
+        dur="0.1667s"
+        begin="2.4833s"
         fill="freeze"
     />
 
@@ -2022,8 +1749,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
-        begin="3.1885s"
+        dur="0.1667s"
+        begin="2.6500s"
         fill="freeze"
     />
 
@@ -2043,8 +1770,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
-        begin="3.4000s"
+        dur="0.1667s"
+        begin="2.8167s"
         fill="freeze"
     />
 
@@ -2064,8 +1791,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
-        begin="3.6115s"
+        dur="0.1667s"
+        begin="2.9833s"
         fill="freeze"
     />
 
@@ -2085,8 +1812,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
-        begin="3.8231s"
+        dur="0.1667s"
+        begin="3.1500s"
         fill="freeze"
     />
 
@@ -2106,8 +1833,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
-        begin="4.0346s"
+        dur="0.1667s"
+        begin="3.3167s"
         fill="freeze"
     />
 
@@ -2127,8 +1854,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
-        begin="4.2462s"
+        dur="0.1667s"
+        begin="3.4833s"
         fill="freeze"
     />
 
@@ -2148,8 +1875,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
-        begin="4.4577s"
+        dur="0.1667s"
+        begin="3.6500s"
         fill="freeze"
     />
 
@@ -2169,8 +1896,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
-        begin="4.6692s"
+        dur="0.1667s"
+        begin="3.8167s"
         fill="freeze"
     />
 
@@ -2190,8 +1917,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
-        begin="4.8808s"
+        dur="0.1667s"
+        begin="3.9833s"
         fill="freeze"
     />
 
@@ -2211,8 +1938,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
-        begin="5.0923s"
+        dur="0.1667s"
+        begin="4.1500s"
         fill="freeze"
     />
 
@@ -2232,8 +1959,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
-        begin="5.3038s"
+        dur="0.1667s"
+        begin="4.3167s"
         fill="freeze"
     />
 
@@ -2253,8 +1980,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
-        begin="5.5154s"
+        dur="0.1667s"
+        begin="4.4833s"
         fill="freeze"
     />
 
@@ -2274,8 +2001,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
-        begin="5.7269s"
+        dur="0.1667s"
+        begin="4.6500s"
         fill="freeze"
     />
 
@@ -2295,8 +2022,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.2115s"
-        begin="5.9385s"
+        dur="0.1667s"
+        begin="4.8167s"
         fill="freeze"
     />
 
@@ -2310,12 +2037,159 @@
     class="terminal bold counter-frame"
     opacity="0">
 
-    25.8%
+    26%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.1667s"
+        begin="4.9833s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="322"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    27%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.1667s"
+        begin="5.1500s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="322"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    28%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.1667s"
+        begin="5.3167s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="322"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    29%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.1667s"
+        begin="5.4833s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="322"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    30%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.1667s"
+        begin="5.6500s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="322"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    31%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.1667s"
+        begin="5.8167s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="322"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    32%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.1667s"
+        begin="5.9833s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="322"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    33.0%
 
     <animate
         attributeName="opacity"
         values="0;1;1"
-        dur="0.2115s"
+        dur="0.1667s"
         begin="6.1500s"
         fill="freeze"
     />
@@ -2328,7 +2202,7 @@
     fill="#8B949E"
     font-size="14"
     class="terminal">
-    CSS
+    Python
 </text>
 
 <rect
@@ -2351,7 +2225,7 @@
     <animate
         attributeName="width"
         from="0"
-        to="22.08"
+        to="37.55"
         dur="5.5s"
         begin="0.85s"
         fill="freeze"
@@ -2373,7 +2247,7 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.7857s"
+        dur="0.4231s"
         begin="0.8500s"
         fill="freeze"
     />
@@ -2394,8 +2268,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.7857s"
-        begin="1.6357s"
+        dur="0.4231s"
+        begin="1.2731s"
         fill="freeze"
     />
 
@@ -2415,8 +2289,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.7857s"
-        begin="2.4214s"
+        dur="0.4231s"
+        begin="1.6962s"
         fill="freeze"
     />
 
@@ -2436,8 +2310,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.7857s"
-        begin="3.2071s"
+        dur="0.4231s"
+        begin="2.1192s"
         fill="freeze"
     />
 
@@ -2457,8 +2331,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.7857s"
-        begin="3.9929s"
+        dur="0.4231s"
+        begin="2.5423s"
         fill="freeze"
     />
 
@@ -2478,8 +2352,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.7857s"
-        begin="4.7786s"
+        dur="0.4231s"
+        begin="2.9654s"
         fill="freeze"
     />
 
@@ -2499,8 +2373,8 @@
         attributeName="opacity"
         values="0;1;1;0"
         keyTimes="0;0.01;0.99;1"
-        dur="0.7857s"
-        begin="5.5643s"
+        dur="0.4231s"
+        begin="3.3885s"
         fill="freeze"
     />
 
@@ -2514,12 +2388,138 @@
     class="terminal bold counter-frame"
     opacity="0">
 
-    7.4%
+    7%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.4231s"
+        begin="3.8115s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="352"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    8%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.4231s"
+        begin="4.2346s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="352"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    9%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.4231s"
+        begin="4.6577s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="352"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    10%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.4231s"
+        begin="5.0808s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="352"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    11%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.4231s"
+        begin="5.5038s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="352"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    12%
+
+    <animate
+        attributeName="opacity"
+        values="0;1;1;0"
+        keyTimes="0;0.01;0.99;1"
+        dur="0.4231s"
+        begin="5.9269s"
+        fill="freeze"
+    />
+
+</text>
+
+<text
+    x="785"
+    y="352"
+    fill="#7EE787"
+    font-size="14"
+    class="terminal bold counter-frame"
+    opacity="0">
+
+    12.5%
 
     <animate
         attributeName="opacity"
         values="0;1;1"
-        dur="0.7857s"
+        dur="0.4231s"
         begin="6.3500s"
         fill="freeze"
     />
@@ -2555,7 +2555,7 @@
     <animate
         attributeName="width"
         from="0"
-        to="0.62"
+        to="0.58"
         dur="5.5s"
         begin="1.05s"
         fill="freeze"
