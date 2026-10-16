@@ -164,7 +164,7 @@
     x="65"
     y="220"
     class="terminal value">
-    77
+    78
 </text>
 
 
@@ -181,7 +181,7 @@
     x="300"
     y="220"
     class="terminal value">
-    39
+    40
 </text>
 
 
@@ -284,7 +284,7 @@
     <animate
         attributeName="width"
         from="0"
-        to="162.87"
+        to="162.81"
         dur="5.5s"
         begin="0.45s"
         fill="freeze"
@@ -1475,7 +1475,7 @@
     <animate
         attributeName="width"
         from="0"
-        to="99.00"
+        to="98.97"
         dur="5.5s"
         begin="0.65s"
         fill="freeze"
@@ -2225,7 +2225,7 @@
     <animate
         attributeName="width"
         from="0"
-        to="37.55"
+        to="37.64"
         dur="5.5s"
         begin="0.85s"
         fill="freeze"
