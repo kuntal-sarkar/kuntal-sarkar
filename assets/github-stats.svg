@@ -164,7 +164,7 @@
     x="65"
     y="220"
     class="terminal value">
-    79
+    80
 </text>
 
 
@@ -181,7 +181,7 @@
     x="300"
     y="220"
     class="terminal value">
-    41
+    42
 </text>
 
 
@@ -284,7 +284,7 @@
     <animate
         attributeName="width"
         from="0"
-        to="156.83"
+        to="156.71"
         dur="5.5s"
         begin="0.45s"
         fill="freeze"
@@ -1392,7 +1392,7 @@
     class="terminal bold counter-frame"
     opacity="0">
 
-    52.3%
+    52.2%
 
     <animate
         attributeName="opacity"
@@ -1433,7 +1433,7 @@
     <animate
         attributeName="width"
         from="0"
-        to="101.95"
+        to="102.12"
         dur="5.5s"
         begin="0.65s"
         fill="freeze"
@@ -2204,7 +2204,7 @@
     <animate
         attributeName="width"
         from="0"
-        to="40.76"
+        to="40.72"
         dur="5.5s"
         begin="0.85s"
         fill="freeze"
